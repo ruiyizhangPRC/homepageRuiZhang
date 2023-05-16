@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!-- Demonstrates DOMContentLoaded -->
+
+<html lang="en">
+    <head>
+        <!--activity slides-for help just in case-->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('form').addEventListener('submit', function(e) {
+                    if(name){
+                        console.log('안녕 하십니까 김정은!');
+                    }
+                    e.preventDefault();
+                });
+            });
+
+        </script>
+        <title>hello</title>
+    </head>
+    <body>
+        <form>
+            <!--https://www.w3schools.com/tags/tag_input.asp-->
+            <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+            <input type="submit">
+        </form>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h1>CS50 Cat!!</h1>
+                    <b>This site is not a phishy website</b>
+                </div>
+            </div>
+        </div>
+        <a href="https://ruiyizhangprc-super-duper-potato-6qx7q49r66xc5xp5-8080.preview.app.github.dev/index.html">Back to home</a>
+    </body>
+</html>
